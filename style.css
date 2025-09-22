@@ -1,0 +1,124 @@
+body {
+    font-family: Montserrat, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial
+}
+
+.nav-card {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    border-radius: 1.5rem;
+    background: #fff;
+    border: none;
+}
+
+.navbar-nav .nav-link:hover {
+    color: red !important;
+  }
+
+.hero {
+    background-color: blue;
+    height: 600px;
+    padding: 150px 150px 150px 150px;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 60px 0px;
+}
+
+/* Espaçamento extra apenas para o card do HERO */
+.hero-card {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.container{
+    background: rgb(255, 255, 255);
+}
+
+.service-icon {
+    font-size: 28px;
+    color: var(--brand)
+}
+
+/* Novo design cards sessão "O que você precisa?" */
+.servico-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    background: #fff;
+}
+.servico-card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    z-index: 2;
+}
+.servico-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.servico-card h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+.servico-card p {
+    min-height: 48px;
+}
+
+.badge-soft {
+    background: rgba(13, 110, 253, 0.08);
+    color: var(--brand);
+    border-radius: 999px;
+    padding: .35rem .7rem
+}
+
+.portfolio-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%
+}
+
+/* Texto branco apenas na coluna de contato */
+.contato-texto-branco {
+    color: #fff;
+}
+.contato-texto-branco .text-muted {
+    color: #fff !important;
+}
+
+.col-md-3 .black {
+    background: #0b1220;
+}
+
+footer {
+    background: #0b1220;
+    color: #dfe7ff;
+    padding: 40px 0
+}
+
+.form-color{
+    background-color: blue;
+    
+}
+
+/* Card style para navbar e rodapé */
+
+.footer-card {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    border-radius: 1.5rem 1.5rem 0 0;
+    background: #fff;
+    border: none;
+    font-size: 1rem;
+}
+.footer-card a {
+    color: #888;
+    transition: color 0.2s;
+}
+.footer-card a:hover {
+    color: #0d6efd;
+}
+
