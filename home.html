@@ -31,7 +31,8 @@
                     <li class="nav-item"><a class="nav-link active" href="#servico">Serviços</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                    <li class="nav-item"><a class="btn btn-primary ms-2" href="#contato">Solicitar Orçamento</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-secondary" href="login.html">Entrar</a></li>
+                    <li class="nav-item"><a class="btn btn-primary ms-2" href="#contato">Solicitar Orçamento</a></li>                    
                 </ul>
             </div>
         </div>
@@ -43,7 +44,7 @@
             <div class="row align-items-center">
                 <div class="col-md-12">
                     <h1 class="display-5 fw-bold">Crie um site profissional que converte</h1>
-                    <p class="lead text-muted">Desenvolvemos sites, e-commerces e landing pages com design pensado para gerar resultados e otimização para motores de busca.</p>
+                    <p class="lead text-muted hero-subtexto">Desenvolvemos sites, e-commerces e landing pages com design pensado para gerar resultados e otimização para motores de busca.</p>
                     <div class="d-flex justify-content-center gap-2">
                         <a href="#contato" class="btn btn-primary btn-lg">Peça um orçamento</a>
                         <a href="#portfolio" class="btn btn-outline-secondary btn-lg">Ver trabalhos</a>
@@ -53,7 +54,55 @@
         </div>
     </header>
 
-<!-- ESCOLHA DO SERVIÇO -->
+    <!-- PORTFÓLIO CARROSSEL CUSTOM -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container bg-light">
+            <div class="text-center mb-5">
+                <h2 class="h2 fw-bold mb-3">Portfólio</h2>
+                <p class="lead text-muted">Alguns projetos recentes — design e resultados reais.</p>
+            </div>
+            <div class="portfolio-carousel-wrapper position-relative">
+                <div id="portfolio-carousel" class="d-flex justify-content-center align-items-center gap-4">
+                    <!-- Seta esquerda -->
+                    <button id="portfolio-prev" class="btn btn-outline-secondary" style="height:80px;align-self:center;font-size:2rem;">&lt;</button>
+                    <!-- Cards do portfólio -->
+                    <div class="servico-card portfolio-card h-100 text-center p-0 shadow-sm rounded-4 bg-white overflow-hidden" data-index="0">
+                        <img src="./img/efeito-montanha-ecommerce.jpg" alt="Efeito Montanha Ecommerce" class="portfolio-img w-100" style="height:180px;object-fit:cover;">
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-2">Efeito Montanha ecommerce</h5>
+                            <p class="text-muted small">E-commerce com +30% de aumento nas vendas.</p>
+                        </div>
+                    </div>
+                    <div class="servico-card portfolio-card h-100 text-center p-0 shadow-sm rounded-4 bg-white overflow-hidden" data-index="1">
+                        <img src="./img/grupo-jim-industrial.jpg" alt="Grupo Jim Industrial" class="portfolio-img w-100" style="height:180px;object-fit:cover;">
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-2">Grupo JIM Industrial</h5>
+                            <p class="text-muted small">Redesign que melhorou o tempo de permanência em 40%.</p>
+                        </div>
+                    </div>
+                    <div class="servico-card portfolio-card h-100 text-center p-0 shadow-sm rounded-4 bg-white overflow-hidden" data-index="2">
+                        <img src="./img/camiseta-metanoia.jpg" alt="Camiseta Metanoia" class="portfolio-img w-100" style="height:180px;object-fit:cover;">
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-2">Camiseta Metanoia</h5>
+                            <p class="text-muted small">Design para camiseta com alto índice de conversão.</p>
+                        </div>
+                    </div>
+                    <!-- Card duplicado -->
+                    <div class="servico-card portfolio-card h-100 text-center p-0 shadow-sm rounded-4 bg-white overflow-hidden" data-index="3">
+                        <img src="./img/efeito-montanha-ecommerce.jpg" alt="Efeito Montanha Ecommerce" class="portfolio-img w-100" style="height:180px;object-fit:cover;">
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-2">Efeito Montanha ecommerce</h5>
+                            <p class="text-muted small">E-commerce com +30% de aumento nas vendas.</p>
+                        </div>
+                    </div>
+                    <!-- Seta direita -->
+                    <button id="portfolio-next" class="btn btn-outline-secondary" style="height:80px;align-self:center;font-size:2rem;">&gt;</button>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- ESCOLHA DO SERVIÇO -->
     <section id="servico" class="py-5 bg-light">
         <div class="container bg-light">
             <div class="text-center mb-5">
@@ -101,51 +150,12 @@
         </div>
     </section>
 
-    <!-- PORTFÓLIO -->
-    <section id="portfolio" class="py-5 bg-light">
+<!-- COMO FUNCIONA -->
+    <section id="funciona" class="py-5 bg-light">
         <div class="container bg-light">
             <div class="text-center mb-5">
-                <h2 class="h2 fw-bold mb-3">Portfólio</h2>
-                <p class="lead text-muted">Alguns projetos recentes — design e resultados reais.</p>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-12 col-md-4">
-                    <div class="servico-card h-100 text-center p-0 shadow-sm rounded-4 bg-white overflow-hidden">
-                        <img src="https://picsum.photos/seed/p1/800/600" alt="Projeto 1" class="portfolio-img w-100" style="height:180px;object-fit:cover;">
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-2">Loja X</h5>
-                            <p class="text-muted small">E-commerce com +30% de aumento nas vendas.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="servico-card h-100 text-center p-0 shadow-sm rounded-4 bg-white overflow-hidden">
-                        <img src="https://picsum.photos/seed/p2/800/600" alt="Projeto 2" class="portfolio-img w-100" style="height:180px;object-fit:cover;">
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-2">Serviço Y</h5>
-                            <p class="text-muted small">Redesign que melhorou o tempo de permanência em 40%.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4">
-                    <div class="servico-card h-100 text-center p-0 shadow-sm rounded-4 bg-white overflow-hidden">
-                        <img src="https://picsum.photos/seed/p3/800/600" alt="Projeto 3" class="portfolio-img w-100" style="height:180px;object-fit:cover;">
-                        <div class="p-4">
-                            <h5 class="fw-bold mb-2">Landing Z</h5>
-                            <p class="text-muted small">Campanha com alto índice de conversão (CPL reduzido).</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- COMO FUNCIONA -->
-    <section id="funciona" class="py-5">
-        <div class="container">
-            <div class="text-center mb-5">
                 <h2 class="h2 fw-bold mb-3">Como funciona?</h2>
-                <p class="lead text-muted">Veja como é simples trabalhar conosco</p>
+                <h2 class="lead text-muted">Veja como é simples trabalhar conosco</h2>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-12 col-sm-6 col-lg-3">
@@ -182,6 +192,11 @@
                         </div>
                         <h5 class="fw-bold mb-2">Entrega do Serviço</h5>
                         <p class="text-muted small">Você recebe o projeto finalizado e pronto para usar</p>
+                    </div>                    
+                </div>
+                <div class="col-md-12">        
+                    <div class="d-flex justify-content-center gap-2">
+                        <a href="#contato" class="btn btn-primary btn-lg">Peça um orçamento</a>                        
                     </div>
                 </div>
             </div>
@@ -205,6 +220,10 @@
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" id="cpf" class="form-control" maxlength="14" required placeholder="000.000.000-00">
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Mensagem</label>
@@ -236,7 +255,9 @@
         </div>
     </footer>
 
-</body>
+    <script src="codigo.js"></script>
+    <script src="form-contato.js"></script>
+<script src="portfolio-carousel.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
